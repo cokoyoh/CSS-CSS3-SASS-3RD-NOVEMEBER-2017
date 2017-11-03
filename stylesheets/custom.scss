@@ -1,7 +1,8 @@
-$color-white : #fff;
+/* Variables are defined here */
+$color-white: #fff;
 $color-black: #000;
-$border-radius : 1px solid;
-//$footer-border-color : 1px solid #cccccc;
+$border-radius: 1px solid;
+
 .navbar-class {
   text-transform: uppercase;
   .navbar {
@@ -9,21 +10,26 @@ $border-radius : 1px solid;
     margin-bottom: 0;
   }
 }
-h2{
+
+h2 {
   font-family: 'Lato', sans-serif;
 }
-h4{
+
+h4 {
   font-family: 'Noto Sans', sans-serif;
 }
+
 p {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 17px;
 }
-.btn{
+
+.btn {
   transition: all 300ms ease-in-out;
   font-weight: 500 !important;
   text-transform: uppercase;
 }
+
 .header {
   height: 600px;
   width: 100%;
@@ -33,32 +39,51 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  h2{
+
+  h2 {
     @extend h2;
     font-size: 72px;
     text-align: center;
   }
-  p{
+
+  /*
+  An example of inheritance is shown below,
+  where the child p @extends the values of the parent p with the @extend keyword
+   */
+  p {
     @extend p;
     font-size: 30px;
     text-align: center;
   }
-  .btn-default{
+
+  .btn-default {
     background-color: transparent !important;
     border-color: $color-white;
     color: $color-white;
   }
 }
-.footer{
+
+.footer {
   padding: 40px 0 60px;
   background-color: $color-black;
   color: $color-white;
+
+  /*
+  here, the % operator is used to define what percentage of the radius should be take.
+  In this case, half transforming the radius into a perfect round circle
+   */
   .social {
     @extend i;
     border: $border-radius $color-white;
     border-radius: 50%;
     height: 30px;
     width: 30px;
+  }
+
+  /* Inheritance shown here too */
+  .contact {
+    @extend i;
+    font-size: 17px !important;
   }
 }
 
