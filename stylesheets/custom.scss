@@ -38,15 +38,22 @@ p {
   text-transform: uppercase;
 }
 
+/*
+Mixin is defined here
+ */
+@mixin image_settings{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
 .header {
   height: my_just_illustration(2,300px); //The function my_just_illustration is applied here
   width: 100%; //This is an example of % operator in application
   padding: 30px 0 30px;
   background-image: url(../images/backgrounds/macbook-image.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
+  @include image_settings; // Mixin is applied here.
 
   h2 {
     @extend h2; // Inheritance is implemented here

@@ -23,6 +23,9 @@ p, .header p {
   font-weight: 500 !important;
   text-transform: uppercase; }
 
+/*
+Mixin is defined here
+ */
 .header {
   height: 600px;
   width: 100%;
