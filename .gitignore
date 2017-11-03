@@ -1,0 +1,11 @@
+
+.DS_Store
+.idea/inspectionProfiles/
+.idea/modules.xml
+.idea/sass.iml
+.idea/workspace.xml
+.sass-cache/
+stylesheets/trial.css
+.gitignore
+
+
