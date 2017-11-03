@@ -39,4 +39,9 @@ p, .header p {
     border-color: #fff;
     color: #fff; }
 
+.footer {
+  padding: 40px 0 60px;
+  background-color: #000;
+  color: #fff; }
+
 /*# sourceMappingURL=custom.css.map */
